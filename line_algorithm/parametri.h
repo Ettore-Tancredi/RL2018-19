@@ -1,0 +1,25 @@
+#ifndef COSTANTI_H
+#define COSTANTI_H
+
+int MAX_SCARTO = 50;
+
+int RG_DIFF_GREEN = -30;
+int GB_DIFF_GREEN = 5;
+double GREEN_INTENSITY = 36.3; 
+
+
+int RG_DIFF_BLACK = 5;
+int GB_DIFF_BLACK = -2;
+double BLACK_INTENSITY = 23.3;
+
+int RG_DIFF_WHITE = 15;
+int GB_DIFF_WHITE = -14;
+double WHITE_INTENSITY = 167.6;
+
+int RG_DIFF_SILVER;
+int GB_DIFF_SILVER;
+double SILVER_INTENSITY;
+
+
+
+#endif
