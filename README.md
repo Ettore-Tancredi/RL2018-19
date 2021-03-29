@@ -1,22 +1,22 @@
-#Rescue Line Galilei 2018/19
+# Rescue Line Galilei 2018/19
 This is the repository where we are developing the _code_ that will guide our robot at the 2019 edition of the Robocup JR in the Rescue Line competition.
 
-![Alt text](https://upload.wikimedia.org/wikipedia/commons/f/fa/Martian_rover_Curiosity_using_ChemCam_Msl20111115_PIA14760_MSL_PIcture-3-br2.jpg "Our robot")
+![Alt text](https://mars.nasa.gov/layout/mars2020/images/home/MarsPerseveranceRover_SampleCollection.jpg "Our robot")
 
-##Commits
-###Prefixes:
+## Commits
+### Prefixes:
  Since you are lazy and use GitKraken, there's no point in telling you what prefix to use.
-###Content:
+### Content:
   Keep it short and simple. But not stupid. Please.
-###Maintenance
+### Maintenance
   File names are sacred: DO NOT change them.
 * * *
-##Code standards
+## Code standards
  If in doubt, follow the Python Zen (`import this`).       
  If still in doubt, follow the Tao of programming: http://www.mit.edu/~xela/tao.html
-###Indentation
+### Indentation
  Indentations are made by a tab. Or Two spaces. It doesn't really matter.
-###Comments
+### Comments
 Comments should respect these parameters:    
 
 + the language used is English
@@ -31,14 +31,14 @@ The structure used to describe a function is as follows:
 	*******************************************/
 if you need to comment a single line of code, you have done something horribly wrong... Unless it's THAT line... (or debugging comments. Those are always welcome).
 * * *
-##Tools
-###Camera
+## Tools
+### Camera
 pycapture.py can be used to take pictures. 
 You can pass the delay as a parameter (default is 10 seconds)
 ```
 	python3 pycapture.py <time>
 ```    
-###Data analysis
+### Data analysis
 stats.py can generate graphs from the images it is pointed to.   
 ```
 	python3 stats.py -flag1 -flag2 -flag3 ... <image_file>.png <graph_name>.png
@@ -70,9 +70,9 @@ for `<image_file>`)
 - `-dir`: if this option is used, `<image_file>` should be subsituted with the directory name. If you want to    
              ignore specific files in the directory, add their names immediatly after the flag option as `<!file_to_ignore>`.
 ***
-##Environment setup
-###Raspberry PI
-####-Enabling the camera    
+## Environment setup
+### Raspberry PI
+#### -Enabling the camera    
 Install latest kernel, GPU firmware and applications:     
 
 ```
@@ -93,8 +93,8 @@ Test with:
 	raspistill -v -o test.jpg
 ```  
 
-###Git
-####-Setting up Git
+### Git
+#### -Setting up Git
 Download Git (it usally ships with all linux distros): 
 ```
 	  sudo apt-get install git
@@ -110,7 +110,7 @@ Configure your account:
 ```
 	  git config --global user.email <email>
 ```
-####-Committing changes
+#### -Committing changes
   Pull updates from the server.   
   (Always update the local repository when starting the Pi):    
 
@@ -124,7 +124,7 @@ Configure your account:
       git push origin master
 ```
  All the Git commands need to be launched from the repo directory.
-###Python
+### Python
    Remember to use python 3.
 ```
 	  python3 <args>
@@ -137,7 +137,7 @@ Configure your account:
   	  pip3 install <package>
 ```
 
-###Shared library
+### Shared library
   Compile with
 ```
   	  g++ -std=c++11 -shared -o <libname>.so -fPIC <filename>.cpp
@@ -146,7 +146,7 @@ Libraries compiled in x86_64 architecture need to be recompiled on ARM.
 
 * * *
 
-##Contributors
+## Contributors
 
 + Luigi
 + Nicola
